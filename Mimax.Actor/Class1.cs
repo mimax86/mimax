@@ -34,17 +34,17 @@ namespace Mimax.Actor
         {
             if (@event is ItemAdded)
             {
-                var evt = (ItemAdded) @event;
-                if (_items.ContainsKey(evt.ItemId))
-                {
-                    var currentCount = _items[evt.ItemId];
-                    var newCount = currentCount + evt.ItemCount;
-                    _items[evt.ItemId] = newCount;
-                }
-                else
-                {
-                    _items[evt.ItemId] = evt.ItemCount;
-                }
+                //var evt = (ItemAdded) @event;
+                //if (_items.ContainsKey(evt.ItemId))
+                //{
+                //    var currentCount = _items[evt.ItemId];
+                //    var newCount = currentCount + evt.ItemCount;
+                //    _items[evt.ItemId] = newCount;
+                //}
+                //else
+                //{
+                //    _items[evt.ItemId] = evt.ItemCount;
+                //}
             }
         }
     }
