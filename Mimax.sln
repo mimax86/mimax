@@ -13,9 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mimax.Tests", "Mimax.Tests\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mimax.Immutable", "Mimax.Immutable\Mimax.Immutable.csproj", "{6C9D7575-7B76-4F4C-B76D-A036CFF36015}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mimax.Desktop", "Mimax.Desktop\Mimax.Desktop.csproj", "{229383B9-3B55-4FD7-AAE8-982570330875}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mimax.Desktop", "Mimax.Desktop\Mimax.Desktop.csproj", "{229383B9-3B55-4FD7-AAE8-982570330875}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mimax.Cache", "Mimax.Cache\Mimax.Cache.csproj", "{5F84B9E9-8230-4B04-9982-F2D04A9EC760}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mimax.Cache", "Mimax.Cache\Mimax.Cache.csproj", "{5F84B9E9-8230-4B04-9982-F2D04A9EC760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mimax.Actor", "Mimax.Actor\Mimax.Actor.csproj", "{408881DE-388F-4400-8D34-3EA4C47599ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mimax.Reactive", "Mimax.Reactive\Mimax.Reactive.csproj", "{69051E28-5A17-4799-A184-6F06F075FD72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{5F84B9E9-8230-4B04-9982-F2D04A9EC760}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F84B9E9-8230-4B04-9982-F2D04A9EC760}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F84B9E9-8230-4B04-9982-F2D04A9EC760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{408881DE-388F-4400-8D34-3EA4C47599ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{408881DE-388F-4400-8D34-3EA4C47599ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{408881DE-388F-4400-8D34-3EA4C47599ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{408881DE-388F-4400-8D34-3EA4C47599ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69051E28-5A17-4799-A184-6F06F075FD72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69051E28-5A17-4799-A184-6F06F075FD72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69051E28-5A17-4799-A184-6F06F075FD72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69051E28-5A17-4799-A184-6F06F075FD72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,8 +6,8 @@ namespace Mimax.Cache
 {
     public class SynchronizedCache<TKey, TValue>
     {
-        private ReaderWriterLockSlim _lock = new ReaderWriterLockSlim();
-        private Dictionary<TKey, TValue> _items = new Dictionary<TKey, TValue>();
+        private readonly ReaderWriterLockSlim _lock = new ReaderWriterLockSlim();
+        private readonly Dictionary<TKey, TValue> _items = new Dictionary<TKey, TValue>();
 
         public int Count => _items.Count;
 
@@ -16,9 +16,7 @@ namespace Mimax.Cache
             _lock.EnterReadLock();
             try
             {
-                if (_items.ContainsKey(key))
-                    return _items[key];
-                return default;
+                return _items.ContainsKey(key) ? _items[key] : default;
             }
             finally
             {
@@ -47,7 +45,7 @@ namespace Mimax.Cache
                 var results = new List<TResult>();
                 foreach (var item in _items)
                 {
-                    var result = default(TResult);
+                    TResult result;
                     try
                     {
                         result = select((item.Key, item.Value));
@@ -56,8 +54,10 @@ namespace Mimax.Cache
                     {
                         continue;
                     }
+
                     results.Add(result);
                 }
+
                 return results;
             }
             finally
