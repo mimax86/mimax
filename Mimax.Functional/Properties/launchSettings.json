@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Mimax.Functional": {
+      "commandName": "Project",
+      "commandLineArgs": "HELLO WORLD"
+    }
+  }
+}

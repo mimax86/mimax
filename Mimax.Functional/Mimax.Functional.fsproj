@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="tuple.fsx" />
+    <Compile Include="car.fs" />
+    <None Include="car.fsx" />
+    <None Include="basics.fsx" />
+    <None Include="scratchpad.fsx" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>
