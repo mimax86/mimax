@@ -14,17 +14,23 @@ let calculateRemainingPetrol(petrol, consumption) =
     if petrol < consumption then failwith "Oops! You've run out of petrol!"
     else petrol - consumption;
 
-let driveTo(petrol, destination) = 
+let driveTo destination petrol = 
     let consumption = getConsumption(destination)
     let remaining = calculateRemainingPetrol(petrol, consumption)
     if destination = "Gas" then remaining + 50
     else remaining
 
+let petrol = 100
+petrol
+|> driveTo "Office"
+|> driveTo "Stadium"
+|> driveTo "Gas"
+|> driveTo "Home"
 
-let a = driveTo(100, "Office")
-let b = driveTo(a, "Stadium")
-let c = driveTo(b, "Gas")
-let answer = driveTo(c, "Home")
+//let a = driveTo(100, "Office")
+//let b = driveTo(a, "Stadium")
+//let c = driveTo(b, "Gas")
+//let answer = driveTo(c, "Home")
 
 
 

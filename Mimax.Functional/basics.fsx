@@ -16,4 +16,4 @@ let t = ()
 let printAge age =
    System.Console.WriteLine(age.ToString())
 let result = printAge(12).GetHashCode()
-let a = t = result
+//let a = t = result

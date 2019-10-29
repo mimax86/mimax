@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="functions.fsx" />
+    <None Include="record.fsx" />
     <None Include="tuple.fsx" />
     <Compile Include="car.fs" />
     <None Include="car.fsx" />
