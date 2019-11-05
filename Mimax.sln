@@ -27,6 +27,23 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Mimax.Functional", "Mimax.F
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Mimax.Functional.Atm", "Mimax.Functional.Atm\Mimax.Functional.Atm.fsproj", "{85DFFC41-C638-4671-A919-F0400E063D96}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Mimax.ATM", "Mimax.ATM\Mimax.ATM.fsproj", "{5194054C-0572-4E34-9D53-9748B6641595}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interoperablity", "Interoperablity", "{DC6BA2CC-FE5F-475E-B830-4BFA27F38412}"
+	ProjectSection(SolutionItems) = preProject
+		scratchpad.fsx = scratchpad.fsx
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Mimax.Interoperability.FSharpProject", "Mimax.Interoperatbility.FSharpProject\Mimax.Interoperability.FSharpProject.fsproj", "{EC317F52-5A82-4D04-BE25-BB245C1BCEF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mimax.Interoperability.CSharpProject", "Mimax.Interoperatbility.CSharpProject\Mimax.Interoperability.CSharpProject.csproj", "{BCA488C6-5D6F-4CF2-A821-35B0AAB81E63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{5F366FE9-8E1E-40D7-971E-535EDA6EF011}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Core", "Mimax.Wpf.FSharp\Core\Core.fsproj", "{FCFC1441-B4E9-457D-B697-502122A19FCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfClient", "Mimax.Wpf.FSharp\WpfClient\WpfClient.csproj", "{436C01B4-5FCE-42DF-835D-0264E35AC10C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,9 +98,35 @@ Global
 		{85DFFC41-C638-4671-A919-F0400E063D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85DFFC41-C638-4671-A919-F0400E063D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85DFFC41-C638-4671-A919-F0400E063D96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5194054C-0572-4E34-9D53-9748B6641595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5194054C-0572-4E34-9D53-9748B6641595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5194054C-0572-4E34-9D53-9748B6641595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5194054C-0572-4E34-9D53-9748B6641595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC317F52-5A82-4D04-BE25-BB245C1BCEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC317F52-5A82-4D04-BE25-BB245C1BCEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC317F52-5A82-4D04-BE25-BB245C1BCEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC317F52-5A82-4D04-BE25-BB245C1BCEF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA488C6-5D6F-4CF2-A821-35B0AAB81E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA488C6-5D6F-4CF2-A821-35B0AAB81E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA488C6-5D6F-4CF2-A821-35B0AAB81E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA488C6-5D6F-4CF2-A821-35B0AAB81E63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCFC1441-B4E9-457D-B697-502122A19FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCFC1441-B4E9-457D-B697-502122A19FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCFC1441-B4E9-457D-B697-502122A19FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCFC1441-B4E9-457D-B697-502122A19FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{436C01B4-5FCE-42DF-835D-0264E35AC10C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{436C01B4-5FCE-42DF-835D-0264E35AC10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{436C01B4-5FCE-42DF-835D-0264E35AC10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{436C01B4-5FCE-42DF-835D-0264E35AC10C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EC317F52-5A82-4D04-BE25-BB245C1BCEF5} = {DC6BA2CC-FE5F-475E-B830-4BFA27F38412}
+		{BCA488C6-5D6F-4CF2-A821-35B0AAB81E63} = {DC6BA2CC-FE5F-475E-B830-4BFA27F38412}
+		{FCFC1441-B4E9-457D-B697-502122A19FCA} = {5F366FE9-8E1E-40D7-971E-535EDA6EF011}
+		{436C01B4-5FCE-42DF-835D-0264E35AC10C} = {5F366FE9-8E1E-40D7-971E-535EDA6EF011}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5C31B35-7124-4E3A-A9CF-12935697A743}

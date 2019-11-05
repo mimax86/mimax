@@ -6,6 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="businessRules.fsx" />
+    <None Include="DicriminatedUnions.fsx" />
+    <None Include="branching.fsx" />
     <Compile Include="Domain.fs" />
     <None Include="ATM2.fsx" />
     <None Include="collections.fsx" />
