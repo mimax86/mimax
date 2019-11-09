@@ -23,9 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mimax.Reactive", "Mimax.Rea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mimax.Concurrency", "Mimax.Concurrency\Mimax.Concurrency.csproj", "{8C3CADAF-B7F5-4A37-93B8-E5FB5F70C7F3}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Mimax.Functional", "Mimax.Functional\Mimax.Functional.fsproj", "{747469EC-DE7F-4C51-B7E6-260E5EC4A602}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Mimax.Functional", "Mimax.Functional\Mimax.Functional.fsproj", "{747469EC-DE7F-4C51-B7E6-260E5EC4A602}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Mimax.Functional.Atm", "Mimax.Functional.Atm\Mimax.Functional.Atm.fsproj", "{85DFFC41-C638-4671-A919-F0400E063D96}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Mimax.Functional.Atm", "Mimax.Functional.Atm\Mimax.Functional.Atm.fsproj", "{85DFFC41-C638-4671-A919-F0400E063D96}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Mimax.ATM", "Mimax.ATM\Mimax.ATM.fsproj", "{5194054C-0572-4E34-9D53-9748B6641595}"
 EndProject
@@ -34,15 +34,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interoperablity", "Interope
 		scratchpad.fsx = scratchpad.fsx
 	EndProjectSection
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Mimax.Interoperability.FSharpProject", "Mimax.Interoperatbility.FSharpProject\Mimax.Interoperability.FSharpProject.fsproj", "{EC317F52-5A82-4D04-BE25-BB245C1BCEF5}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Mimax.Interoperability.FSharpProject", "Mimax.Interoperatbility.FSharpProject\Mimax.Interoperability.FSharpProject.fsproj", "{EC317F52-5A82-4D04-BE25-BB245C1BCEF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mimax.Interoperability.CSharpProject", "Mimax.Interoperatbility.CSharpProject\Mimax.Interoperability.CSharpProject.csproj", "{BCA488C6-5D6F-4CF2-A821-35B0AAB81E63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mimax.Interoperability.CSharpProject", "Mimax.Interoperatbility.CSharpProject\Mimax.Interoperability.CSharpProject.csproj", "{BCA488C6-5D6F-4CF2-A821-35B0AAB81E63}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{5F366FE9-8E1E-40D7-971E-535EDA6EF011}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Core", "Mimax.Wpf.FSharp\Core\Core.fsproj", "{FCFC1441-B4E9-457D-B697-502122A19FCA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfClient", "Mimax.Wpf.FSharp\WpfClient\WpfClient.csproj", "{436C01B4-5FCE-42DF-835D-0264E35AC10C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FSharp", "FSharp", "{A81E4893-837E-4725-BDC8-55F68C722D85}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Mimax.FSharp.Data", "Mimax.FSharp.Data\Mimax.FSharp.Data.fsproj", "{F469656E-6486-420E-9E5A-794956C37D18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -118,15 +122,25 @@ Global
 		{436C01B4-5FCE-42DF-835D-0264E35AC10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{436C01B4-5FCE-42DF-835D-0264E35AC10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{436C01B4-5FCE-42DF-835D-0264E35AC10C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F469656E-6486-420E-9E5A-794956C37D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F469656E-6486-420E-9E5A-794956C37D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F469656E-6486-420E-9E5A-794956C37D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F469656E-6486-420E-9E5A-794956C37D18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{747469EC-DE7F-4C51-B7E6-260E5EC4A602} = {A81E4893-837E-4725-BDC8-55F68C722D85}
+		{85DFFC41-C638-4671-A919-F0400E063D96} = {A81E4893-837E-4725-BDC8-55F68C722D85}
+		{5194054C-0572-4E34-9D53-9748B6641595} = {A81E4893-837E-4725-BDC8-55F68C722D85}
+		{DC6BA2CC-FE5F-475E-B830-4BFA27F38412} = {A81E4893-837E-4725-BDC8-55F68C722D85}
 		{EC317F52-5A82-4D04-BE25-BB245C1BCEF5} = {DC6BA2CC-FE5F-475E-B830-4BFA27F38412}
 		{BCA488C6-5D6F-4CF2-A821-35B0AAB81E63} = {DC6BA2CC-FE5F-475E-B830-4BFA27F38412}
+		{5F366FE9-8E1E-40D7-971E-535EDA6EF011} = {A81E4893-837E-4725-BDC8-55F68C722D85}
 		{FCFC1441-B4E9-457D-B697-502122A19FCA} = {5F366FE9-8E1E-40D7-971E-535EDA6EF011}
 		{436C01B4-5FCE-42DF-835D-0264E35AC10C} = {5F366FE9-8E1E-40D7-971E-535EDA6EF011}
+		{F469656E-6486-420E-9E5A-794956C37D18} = {A81E4893-837E-4725-BDC8-55F68C722D85}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5C31B35-7124-4E3A-A9CF-12935697A743}
