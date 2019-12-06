@@ -251,8 +251,8 @@ namespace Mimax.Tests
                 {
                     allContacts.Where(c => c.Town == "Reading"),
                     new Person(),
-                    { new Person(), 10 },
-                    { "Misha", "Hong Kong" }
+                    {new Person(), 10},
+                    {"Misha", "Hong Kong"}
                 }
             };
 
@@ -264,12 +264,12 @@ namespace Mimax.Tests
             jon.Contacts.Add(new Person(), 10);
 
             var dictionary = new Dictionary<string, Person>();
-            dictionary.Add("Jon", new Person() { Name = "Jon" });
-            dictionary.Add(new Person { Name = "Jon" });
+            dictionary.Add("Jon", new Person() {Name = "Jon"});
+            dictionary.Add(new Person {Name = "Jon1"});
 
             dictionary = new Dictionary<string, Person>
             {
-                new Person { Name="Ivan" }
+                new Person {Name = "Ivan"}
             };
         }
 
@@ -467,6 +467,11 @@ namespace Mimax.Tests
 
     public class Person
     {
+        public Person()
+        {
+            Contacts = new List<Person>();
+        }
+
         public string Name { get; set; }
 
         public string Town { get; set; }

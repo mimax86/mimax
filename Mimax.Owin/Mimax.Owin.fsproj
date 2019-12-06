@@ -6,10 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="scratchpad.fsx" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
+  <ItemGroup />
+
   <ItemGroup>
+    <PackageReference Include="FSharp.Data" Version="3.3.2" />
     <PackageReference Include="Microsoft.Owin.SelfHost" Version="4.0.1" />
   </ItemGroup>
 
